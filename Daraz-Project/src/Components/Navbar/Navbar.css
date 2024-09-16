@@ -1,0 +1,51 @@
+.navbar {
+  background-color: rgb(255, 102, 0);
+  height: 119px;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+.parent-up-nav {
+  display: flex;
+  justify-content: end;
+  gap: 30px;
+  margin-right: 100px;
+  text-align: right;
+  font-size: 15px;
+  color: white;
+  background: rgba(0, 0, 0, 0.03);
+  height: 25px;
+  min-width: 500px;
+  position: relative;
+  text-align: right;
+  transition: height 0.25s linear, zIndex 0s linear 0.25s;
+  z-index: 310;
+}
+.lower-nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+.input-feild {
+  display: flex;
+}
+.search-icon {
+  color: rgb(255, 102, 0);
+  background-color: rgb(197, 170, 174);
+  background-color: white;
+  width: 54px;
+  height: 45px;
+  border-left: 1px solid black;
+}
+
+.search-icon2 {
+  color: white;
+  height: 45px;
+  width: 54px;
+}
+
+.inside-input {
+  padding-right: 20px;
+  padding-left: 50px;
+  width: 688px;
+  height: 45px;
+}

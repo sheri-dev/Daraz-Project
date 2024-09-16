@@ -1,0 +1,100 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-section {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  position: relative;
+  top: 122px;
+  height: 22rem;
+  z-index: 1;
+  background-color: #e7e8ec;
+}
+.image-slider {
+  width: 988px;
+  height: 100%;
+}
+.picture-logo {
+  width: 24.53;
+  height: 41.93;
+}
+.pc-module-heade {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.pc-download {
+  background: linear-gradient(90deg, #fff, hsla(0, 0%, 100%, 0)),
+    linear-gradient(179.27deg, #ffedd6 0.83%, #ffc3e3 46.78%, #fff 99.57%),
+    linear-gradient(0deg, #fff, #fff);
+}
+.side-1 {
+  display: flex;
+}
+.side-2 {
+  display: flex;
+}
+.pc-module-body {
+  background-image: url(https://img.lazcdn.com/g/tps/imgextra/i2/O1CN01tceZus1IewufOY1tZ_!!6000000000919-2-tps-364-316.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  width: 182px;
+  height: 158px;
+}
+.title {
+  color: #6c1d00;
+}
+.playstore {
+  display: flex;
+  padding: 10px 10px;
+}
+.appstore {
+  display: flex;
+  padding: 10px 10px;
+}
+.content {
+  display: flex;
+}
+.pc-module-body {
+  justify-content: center;
+
+  color: white;
+  padding: 5px;
+  font-size: 12px;
+}
+.side-2 {
+  margin-top: 10px;
+}
+.Market-logo {
+  margin: 15px;
+  gap: 20px;
+  text-decoration: solid;
+}
+.enjoy-tips-wrap {
+  text-align: center;
+}
+.download-btn {
+  padding: 10px;
+  font-size: 15px;
+}
+.last-text {
+  -webkit-box-orient: vertical;
+  color: #2e3346;
+  display: -webkit-box;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 12px;
+  margin-left: 4px;
+  margin-top: 6px;
+  overflow: hidden;
+}
+.txt1 {
+  display: flex;
+  align-items: center;
+}
+.img1 {
+  margin-right: 10px;
+}

@@ -1,0 +1,10 @@
+.random {
+  z-index: 10;
+  background-color: blue;
+  position: relative;
+  top: 7rem;
+}
+.login {
+  position: relative;
+  top: 6rem;
+}

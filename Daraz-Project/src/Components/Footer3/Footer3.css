@@ -1,0 +1,70 @@
+.f-final {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+  color: #606060;
+  position: relative;
+  top: 10rem;
+  bottom: 5rem;
+  margin: 50px;
+}
+.countries {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+.Pak {
+  display: flex;
+  gap: 10px;
+}
+.Bangla {
+  display: flex;
+  gap: 10px;
+}
+.Srilanka {
+  display: flex;
+  gap: 10px;
+}
+.Myanmar {
+  display: flex;
+  gap: 10px;
+}
+.Nepal {
+  display: flex;
+  gap: 10px;
+}
+.social-media {
+  display: flex;
+  gap: 15px;
+  font-size: 1.5rem;
+}
+.Facebook {
+  background-color: #3b5998;
+  color: #fff;
+}
+.Twitter {
+  color: #1da1f2;
+}
+.Instagram {
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    /* Start with orange */ #e6683c 25%,
+    /* Blend to a deeper orange-red */ #dc2743 50%,
+    /* Midpoint is pink/red */ #cc2366 75%,
+    /* Shift to purple-pink */ #bc1888 100% /* Finish with violet */
+  );
+}
+.Youtube {
+  background-color: red;
+  color: white;
+}
+.World {
+  color: red;
+}
+.last-col {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-size: 15px;
+}
