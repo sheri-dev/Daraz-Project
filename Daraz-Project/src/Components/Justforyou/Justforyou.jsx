@@ -30,13 +30,20 @@ const Justforyou = () => {
 
   return (
     <>
-      <div className="mx-20 mt-10 just-for">
-        <h1 className="text-2xl font-semibold">Just For You</h1>
+      <div className="container mx-auto px-4 mt-10 just-for">
+        <h1 className="text-2xl font-semibold text-center md:text-left">
+          Just For You
+        </h1>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 py-3">
+        {/* Responsive Grid Layout */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6 py-3">
           {products.length > 0 ? (
             products.map((product) => (
-              <div key={product.id} onClick={() => handleAddToCart(product)}>
+              <div
+                key={product.id}
+                className="cursor-pointer flex flex-col items-center" // Center content
+                onClick={() => handleAddToCart(product)}
+              >
                 <Product
                   image={product.thumbnail}
                   item={product.title}
@@ -58,7 +65,8 @@ const Justforyou = () => {
           )}
         </div>
 
-        <div className="text-xl text-blue-600 border border-blue-600 w-48 lg:w-96 text-center py-1 mx-auto mt-10 cursor-pointer">
+        {/* Responsive "Load More" Button */}
+        <div className="text-xl text-blue-600 border border-blue-600 w-full md:w-48 lg:w-64 text-center py-2 mx-auto mt-10 cursor-pointer hover:bg-blue-600 hover:text-white transition">
           Load More
         </div>
 

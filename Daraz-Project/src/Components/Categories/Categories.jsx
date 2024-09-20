@@ -9,6 +9,7 @@ const Categories = () => {
   const [products, setProducts] = useState([]);
   const dispatch = useDispatch(); // Initialize dispatch
 
+  // Fetch products from API
   const fetchProducts = async () => {
     try {
       const res = await axios.get("https://dummyjson.com/products");
@@ -28,17 +29,25 @@ const Categories = () => {
   };
 
   return (
-    <div className="mx-20 mt-10 Cate">
-      <h1 className="text-2xl font-semibold">Categories</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 py-3">
+    <div className="container mx-auto px-4 mt-10 Cate">
+      <h1 className="text-2xl font-semibold text-center md:text-left">
+        Categories
+      </h1>
+
+      {/* Responsive Grid Layout */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 xl:grid-cols-8 gap-4 py-3">
         {products.length > 0 ? (
           products.map((product) => (
-            <div key={product.id} onClick={() => handleAddToCart(product)}>
+            <div
+              key={product.id}
+              onClick={() => handleAddToCart(product)}
+              className="cursor-pointer"
+            >
               <Box
                 name={product.title}
                 image={product.thumbnail}
                 price={product.price}
-                discount="25 %" // Passing price to Box component
+                discount="25 %" // Passing discount info
               />
             </div>
           ))
